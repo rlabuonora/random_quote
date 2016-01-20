@@ -2,14 +2,8 @@
 
 A random quote generator for freecodecamp.com
 
-Things you may want to cover:
-
-
-* APIs 
 Consumes https://theysaidso.com/api/ and twitter api
 
 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.

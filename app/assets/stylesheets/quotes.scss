@@ -1,3 +1,37 @@
 // Place all the styles related to the quotes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  padding: 6em 0 2em 0;
+}
+
+button, blockquote {
+  font-family: 'Covered By Your Grace', cursive;
+  
+}
+
+
+blockquote {
+  font-size: 3em !important;
+}
+
+footer {
+  font-family: 'Amatic SC', cursive;
+}
+
+.btn {
+  margin-right: 40px;
+  margin-top: 60px;
+  font-size: 28px !important;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold !important;
+  width: 150px;
+}
+
+.btn span {
+  margin-left: 15px;
+}
+ 
+.btn:focus {
+  outline: none;
+}

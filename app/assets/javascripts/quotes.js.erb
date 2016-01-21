@@ -13,7 +13,7 @@ function newQuote() {
       alert("rafa");
     },
     beforeSend: function(xhr) {
-      xhr.setRequestHeader("X-Mashape-Authorization", "YgysjrbvVumsh4ikjJD8nyi7Liesp1WAVswjsn84qpSw3v1swu"); // Enter here your Mashape key
+      xhr.setRequestHeader("X-Mashape-Authorization", '<%= ENV["QUOTES_API_KEY"] %>'); // Enter here your Mashape key
     }
   });
 }

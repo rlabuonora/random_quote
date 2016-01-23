@@ -5,5 +5,9 @@ A random quote generator for freecodecamp.com
 Consumes https://theysaidso.com/api/ and twitter api
 
 
-
+TODO: 
+    - Tweet quote
+    - Support Sad Paths (API calls errors)
+    - Add tests (happy and sad path)
+    
 

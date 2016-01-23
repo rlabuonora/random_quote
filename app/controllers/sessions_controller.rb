@@ -8,7 +8,6 @@ class SessionsController < ApplicationController
       puts "here!"
       puts @user
       session[:user_id] = @user.id
-      flash['success'] = "Welcome #{@user.name}!"
     rescue
       flash['danger'] =  "There was an error during twitter login"
     end
@@ -18,7 +17,6 @@ class SessionsController < ApplicationController
   def destroy
     if current_user
       session[:user_id] = nil
-      flash[:success] = 'Chau!'
     end
     redirect_to root_path
     

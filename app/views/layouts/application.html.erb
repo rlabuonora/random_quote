@@ -10,8 +10,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'Twitter', '/auth/twitter' %></li>
+     </ul>
+  </div>
+</nav>
+<div class="container">
+  <%= yield %>
+</div>
 
-<%= yield %>
 
 </body>
 </html>

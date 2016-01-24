@@ -9,5 +9,5 @@ TODO:
     - Tweet quote
     - Support Sad Paths (API calls errors)
     - Add tests (happy and sad path)
-    
+    - Cache quotes, only refresh when needed
 

@@ -12,8 +12,8 @@ function newQuote() {
     error: function(err) {
       alert("rafa");
     },
-    beforeSend: function(xhr) {
-      xhr.setRequestHeader("X-Mashape-Authorization", '<%= ENV["QUOTES_API_KEY"] %>'); // Enter here your Mashape key
+   beforeSend: function(xhr) {
+      xhr.setRequestHeader("X-Mashape-Authorization", "<%= Rails.application.secrets.quotes_api_key %>"); // Enter here your Mashape key
     }
   });
 }

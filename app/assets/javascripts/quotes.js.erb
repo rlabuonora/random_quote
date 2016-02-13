@@ -18,9 +18,32 @@ function newQuote() {
   });
 }
 
+
+function tweetQuote() {
+  event.preventDefault();
+  var quote = $(".quote").text() + " (" + $(".author").text() + ")";
+  $.ajax({
+    url: '/quotes', // The URL to the API. You can get this in the API page of the API you intend to consume
+    type: 'POST', // The HTTP Method, can be GET POST PUT DELETE etc
+    data: {quote: quote}, // Additional parameters here
+    dataType: 'json',
+    success: function(data) {
+
+      console.log(data);
+      
+    },
+    error: function(err) {
+      console.log("error!");
+      console.log(err);
+    }
+  });
+}
+
 $(document).ready(function() {
     // Only change code below this line.
     $("#newQuote").on("click", newQuote);
     newQuote();
+    $("#tweetQuote").on("click", tweetQuote);
+
     // Only change code above this line.
 });

@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'omniauth-twitter'
+gem 'twitter'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views

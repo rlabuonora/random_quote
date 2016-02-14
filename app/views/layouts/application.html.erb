@@ -28,8 +28,8 @@
           <li><%= link_to 'Log Out', logout_path, method: :delete %></li>
         </ul>
       <% else %>
-        <ul class="nav navbar-nav">
-          <li><%= link_to 'Twitter', '/auth/twitter' %></li>
+        <ul class="nav navbar-nav pull-right">
+          <li><%= link_to 'Log in with Twitter', '/auth/twitter' %></li>
         </ul>
       <% end %>
     </div>

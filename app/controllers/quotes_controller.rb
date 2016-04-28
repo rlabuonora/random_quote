@@ -3,7 +3,6 @@ class QuotesController < ApplicationController
   end
     
   def tweet
-    puts "hello from controller"
     # tweet
     current_user.tweet(params[:quote])
     respond_to do |format|

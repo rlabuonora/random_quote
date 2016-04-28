@@ -15,6 +15,5 @@ class SessionsController < ApplicationController
       session[:user_id] = nil
     end
     redirect_to root_path
-    
   end
 end
